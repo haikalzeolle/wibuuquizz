@@ -6,6 +6,7 @@ const MAX = 30, TIME = 30, REVEAL = 6;
 // Flat layout: only these files are served, so questions.json (the answers) stays private.
 const F = (f) => path.join(__dirname, f);
 app.get('/js/:f', (q, r) => (['app.js', 'avatar.js', 'host.js'].includes(q.params.f) ? r.sendFile(F(q.params.f)) : r.sendStatus(404)));
+app.get('/bg.mp4', (_, r) => r.sendFile(F('bg.mp4')));
 app.get('/css/style.css', (_, r) => r.sendFile(F('style.css')));
 app.get('/host', (_, r) => r.sendFile(F('host.html')));
 app.get('/', (_, r) => r.sendFile(F('index.html')));
