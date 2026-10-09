@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cursed Quiz - Host</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="bg"><i class="kanji">呪</i><i class="slash s1"></i><i class="slash s2"></i></div>
+<header><h1>HOST ROOM</h1><p class="jp">管理</p></header>
+<main>
+  <section id="login" class="screen on">
+    <div class="panel" style="max-width:440px;margin:auto;width:100%">
+      <h2>Host login</h2>
+      <form id="f" autocomplete="off">
+        <input id="key" type="password" placeholder="Host password">
+        <button id="go" class="btn" type="submit">Open host room</button>
+      </form>
+      <p id="st" class="hint">Connecting to the server... (the first load can take up to a minute)</p>
+      <p id="err" class="err"></p>
+    </div>
+  </section>
+  <section id="hlobby" class="screen">
+    <div class="panel">
+      <h2>Players in the waiting room <span id="count">0/30</span></h2>
+      <div id="players"></div>
+      <button id="start" class="btn red" disabled>Start battle</button>
+      <p class="hint">You are the host and do not take a player slot. Share the main game link with your players.</p>
+    </div>
+  </section>
+  <section id="game" class="screen">
+    <div class="hud"><span id="qno"></span><span id="ans"></span><b id="secs">30</b></div>
+    <div class="bar"><i id="barfill"></i></div>
+    <h2 id="qtext" class="panel qbox"></h2>
+    <div id="opts"></div>
+    <button id="skip" class="btn">Show answer now</button>
+    <p id="feedback" class="hint"></p>
+    <div id="mini"></div>
+  </section>
+  <section id="final" class="screen">
+    <h2 class="big">Final ranking</h2>
+    <div id="podium"></div>
+    <div id="rank"></div>
+    <button id="again" class="btn">Play again</button>
+  </section>
+</main>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/avatar.js"></script>
+<script src="/js/host.js"></script>
+</body>
+</html>
