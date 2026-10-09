@@ -14,7 +14,8 @@
   <section id="login" class="screen on">
     <div class="panel" style="max-width:440px;margin:auto;width:100%">
       <h2>Host login</h2>
-      <input id="key" type="password" placeholder="Host password" autocomplete="off">
+      <input id="key" type="password" placeholder="Host password" autocomplete="off" autofocus style="display:block;width:100%;margin-top:10px;padding:10px 12px;background:#0a0816;border:2px solid #7c3aed;color:#f3efe6;font:700 18px Rajdhani,sans-serif;outline:none">
+      <label class="hint" style="display:block;margin-top:8px"><input type="checkbox" onchange="document.getElementById('key').type=this.checked?'text':'password'"> Show password</label>
       <button id="go" class="btn">Open host room</button>
       <p id="err" class="err"></p>
     </div>
