@@ -3,15 +3,8 @@ const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const show = (id) => document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('on', s.id === id));
 let ok = false, timer = null;
 
-let lastKey = null;
-const login = (k) => { lastKey = String(k || '').trim(); $('#err').textContent = 'Checking...'; socket.emit('hostLogin', lastKey); };
-$('#f').onsubmit = (e) => { e.preventDefault(); login($('#key').value); };
-socket.on('connect', () => {
-  $('#st').textContent = 'Connected. Enter the host password.';
-  const k = lastKey || new URLSearchParams(location.search).get('key'); // /host?key=PASSWORD logs in automatically
-  if (k) login(k);
-});
-socket.on('connect_error', () => ($('#st').textContent = 'Cannot reach the server yet. Wait a moment and refresh.'));
+$('#go').onclick = () => socket.emit('hostLogin', $('#key').value);
+$('#key').onkeydown = (e) => e.key === 'Enter' && $('#go').click();
 $('#start').onclick = () => socket.emit('start');
 $('#skip').onclick = () => socket.emit('skip');
 $('#again').onclick = () => socket.emit('reset');

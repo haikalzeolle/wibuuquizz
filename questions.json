@@ -1,7 +1,102 @@
 [
-  { "q": "Ciri ketelusan tadbir urus baik merujuk kepada pegawai awam yang", "options": ["mengawasi sumber yang dipertanggungjawabkan dengan amanah", "memberikan maklumat yang jelas kepada pelanggan", "membuat keputusan berdasarkan budi bicaranya", "melakukan kerja dengan ikhlas"], "answer": 1 },
-  { "q": "Yang manakah kesan tadbir urus baik negara kepada rakyat?", "options": ["menikmati perkhidmatan berkualiti", "memenuhi kehendak pelanggan", "menjimatkan kos perbelanjaan", "mengurangkan aduan awam"], "answer": 0 },
-  { "q": "Yang manakah cabaran utama tadbir urus baik?", "options": ["saingan daripada tadbir urus swasta", "memenuhi hasrat dan aspirasi rakyat", "lambakan kerja yang perlu disiapkan", "sistem penyampaian perkhidmatan awam"], "answer": 1 },
-  { "q": "Tadbir urus yang cekap bertujuan untuk", "options": ["melaksanakan penguatkuasaan secara terpilih", "meningkatkan keupayaan kerajaan untuk melaksanakan dasar", "menambahkan sumber manusia dalam perkhidmatan awam", "mengekalkan karenah birokrasi dalam prosedur menjalankan tugas"], "answer": 1 },
-  { "q": "Tindakan penjawat awam yang memuat naik maklumat sulit agensinya melalui laman sosial melanggar prinsip", "options": ["integriti", "ketelusan", "pematuhan", "akauntabiliti"], "answer": 0 }
+  {
+    "q": "Yang manakah benar tentang fungsi Majlis Raja-Raja?",
+    "options": [
+      "Menasihati Perdana Menteri berkaitan urusan badan pentadbiran",
+      "Menyelaraskan tatakelola perundangan berkaitan hal ehwal agama",
+      "Menasihati YDPA berkaitan pelantikan Perdana Menteri",
+      "Memelihara hal ehwal berkaitan kedudukan istimewa orang Melayu dan bumiputera"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Kerajaan Negeri boleh",
+    "options": [
+      "Meluluskan undang-undang kecil Kerajaan Tempatan",
+      "Memilih kakitangan bagi setiap Kerajaan Tempatan",
+      "Menetapkan sempadan Kerajaan Tempatan",
+      "Merancang belanjawan Kerajaan Tempatan"
+    ],
+    "answer": 2
+  },
+  {
+    "q": "Yang manakah kuasa perundangan YDPA?",
+    "options": [
+      "Melantik Perdana Menteri",
+      "Melantik senator",
+      "Melantik Menteri",
+      "Melantik Sultan"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Yang manakah berkaitan dengan badan kehakiman di Malaysia?",
+    "options": [
+      "Badan kehakiman negara dikawal selia oleh Mahkamah Persekutuan",
+      "Peguam Negara hanya dilantik dalam kalangan peguam kanan kerajaan",
+      "Jabatan Perdana Menteri menggubal reformasi dalam sistem kehakiman negara",
+      "Umur bersara wajib Ketua Hakim Negara Mahkamah Persekutuan ialah 66 tahun"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Yang manakah benar tentang pembubaran Parlimen?",
+    "options": [
+      "Parlimen terbubar apabila genap tempoh lima tahun",
+      "Mendapat sokongan 2/3 ahli Majlis Parlimen",
+      "Melibatkan semua ahli Majlis Parlimen",
+      "Dibubarkan oleh Perdana Menteri"
+    ],
+    "answer": 0
+  },
+  {
+    "q": "Ciri ketelusan tadbir urus baik merujuk kepada pegawai awam yang",
+    "options": [
+      "mengawasi sumber yang dipertanggungjawabkan dengan amanah",
+      "memberikan maklumat yang jelas kepada pelanggan",
+      "membuat keputusan berdasarkan budi bicaranya",
+      "melakukan kerja dengan ikhlas"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Yang manakah kesan tadbir urus baik negara kepada rakyat?",
+    "options": [
+      "menikmati perkhidmatan berkualiti",
+      "memenuhi kehendak pelanggan",
+      "menjimatkan kos perbelanjaan",
+      "mengurangkan aduan awam"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Yang manakah cabaran utama tadbir urus baik?",
+    "options": [
+      "saingan daripada tadbir urus swasta",
+      "memenuhi hasrat dan aspirasi rakyat",
+      "lambakan kerja yang perlu disiapkan",
+      "sistem penyampaian perkhidmatan awam"
+    ],
+    "answer": 3
+  },
+  {
+    "q": "Tadbir urus yang cekap bertujuan untuk",
+    "options": [
+      "melaksanakan penguatkuasaan secara terpilih",
+      "meningkatkan keupayaan kerajaan untuk melaksanakan dasar",
+      "menambahkan sumber manusia dalam perkhidmatan awam",
+      "mengekalkan karenah birokrasi dalam prosedur menjalankan tugas"
+    ],
+    "answer": 1
+  },
+  {
+    "q": "Tindakan penjawat awam yang memuat naik maklumat sulit agensinya melalui laman sosial melanggar prinsip",
+    "options": [
+      "integriti",
+      "ketelusan",
+      "pematuhan",
+      "akauntabiliti"
+    ],
+    "answer": 0
+  }
 ]

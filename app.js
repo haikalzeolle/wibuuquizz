@@ -1,11 +1,12 @@
 const $ = (s) => document.querySelector(s), socket = io();
 let av = { key: 'gojo', ...CHARS.gojo }, joined = false, myId = null, choice = null, timer = null, prevScore = 0, myScore = 0;
 const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-const show = (id) => { document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('on', s.id === id)); };
+const show = (id) => { document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('on', s.id === id)); document.body.classList.toggle('ingame', id === 'game'); };
+const renderRoam = () => { $('#roam').innerHTML = `<div class="walker"><div class="bob">${avatarSVG(av)}</div></div>`; };
 const payload = () => ({ name: $('#name').value, av: { key: av.key, hair: av.hair, style: av.style, outfit: av.outfit, acc: av.acc, aura: av.aura } });
 
 function renderCust() {
-  $('#preview').innerHTML = avatarSVG(av);
+  $('#preview').innerHTML = avatarSVG(av); renderRoam();
   $('#chars').innerHTML = Object.entries(CHARS).map(([k, c]) => `<div class="chip ${av.key === k ? 'on' : ''}" data-k="${k}">${avatarSVG(c)}<small>${c.n}</small></div>`).join('');
   $('#styles').innerHTML = STYLES.map((s) => `<button class="tag ${av.style === s ? 'on' : ''}" data-s="${s}">${s}</button>`).join('');
   $('#accs').innerHTML = ACCS.map((s) => `<button class="tag ${av.acc === s ? 'on' : ''}" data-a="${s}">${s}</button>`).join('');
@@ -15,12 +16,13 @@ function renderCust() {
 $('#chars').onclick = (e) => { const c = e.target.closest('.chip'); if (c) { av = { key: c.dataset.k, ...CHARS[c.dataset.k] }; renderCust(); } };
 $('#styles').onclick = (e) => { if (e.target.dataset.s) { av.style = e.target.dataset.s; renderCust(); } };
 $('#accs').onclick = (e) => { if (e.target.dataset.a) { av.acc = e.target.dataset.a; renderCust(); } };
-['hair', 'outfit', 'aura'].forEach((k) => ($('#' + k).oninput = (e) => { av[k] = e.target.value; $('#preview').innerHTML = avatarSVG(av); }));
+['hair', 'outfit', 'aura'].forEach((k) => ($('#' + k).oninput = (e) => { av[k] = e.target.value; $('#preview').innerHTML = avatarSVG(av); renderRoam(); }));
 ['hair', 'outfit', 'aura'].forEach((k) => ($('#' + k).onchange = () => renderCust()));
 $('#name').onchange = () => joined && socket.emit('update', payload());
 $('#join').onclick = () => { if (!$('#name').value.trim()) { $('#err').textContent = 'Type a name first.'; return; } socket.emit('join', payload()); };
 $('#start').onclick = () => socket.emit('start');
 $('#again').onclick = () => socket.emit('reset');
+$('#back').onclick = () => { $('#wait').textContent = 'Back in the waiting room. Wait for the host to start the next round.'; show('lobby'); };
 
 socket.on('connect', () => (myId = socket.id));
 socket.on('err', (m) => ($('#err').textContent = m));
