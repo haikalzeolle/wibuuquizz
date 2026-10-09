@@ -2,7 +2,6 @@ const express = require('express'), http = require('http'), path = require('path
 const { Server } = require('socket.io');
 const app = express(), server = http.createServer(app), io = new Server(server);
 const MAX = 30, TIME = 30, REVEAL = 6;
-const HOST_KEY = process.env.HOST_KEY || 'changeme'; // set HOST_KEY on Render
 
 // Flat layout: only these files are served, so questions.json (the answers) stays private.
 const F = (f) => path.join(__dirname, f);
@@ -62,8 +61,7 @@ io.on('connection', (s) => {
     if (s.id !== G.host || G.phase !== 'lobby' || !online().length) return;
     G.qs = loadQ(); G.qi = -1; nextQ();
   });
-  s.on('hostLogin', (k) => {
-    if (k !== HOST_KEY) return s.emit('hostFail');
+  s.on('hostLogin', () => {
     G.host = s.id; s.emit('hostOk', { phase: G.phase }); lobby();
   });
   s.on('skip', () => { if (s.id === G.host) reveal(); });

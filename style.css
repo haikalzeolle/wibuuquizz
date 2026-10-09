@@ -25,8 +25,9 @@ h3{font-size:14px;color:#a9a3c8;margin:12px 0 6px;font-weight:700}
 .aura2{animation:spin 14s linear infinite;transform-origin:50px 52px}
 @keyframes pulse{50%{transform:scale(1.05);fill-opacity:.28}}
 @keyframes spin{to{transform:rotate(360deg)}}
-input[type=text],#name{width:100%;padding:10px 12px;background:#0a0816;border:2px solid #7c3aed;color:var(--bone);font:700 18px Rajdhani;outline:none}
-#name:focus{border-color:var(--cyan)}
+input[type=text],input[type=password],#name,#key{width:100%;padding:10px 12px;background:#0a0816;border:2px solid #7c3aed;color:var(--bone);font:700 18px Rajdhani;outline:none}
+#name:focus,#key:focus{border-color:var(--cyan)}
+#key{display:block;margin:10px 0 0;color-scheme:dark}
 .chip{width:58px;cursor:pointer;background:#0a0816;border:2px solid #2d2556;padding:3px;transition:.15s}
 .chip svg{display:block}.chip small{display:block;text-align:center;font-size:12px}
 .chip.on,.tag.on{border-color:var(--cyan);box-shadow:0 0 14px #38bdf877}

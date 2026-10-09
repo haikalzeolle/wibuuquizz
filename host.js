@@ -3,12 +3,10 @@ const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const show = (id) => document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('on', s.id === id));
 let ok = false, timer = null;
 
-$('#go').onclick = () => socket.emit('hostLogin', $('#key').value);
-$('#key').onkeydown = (e) => e.key === 'Enter' && $('#go').click();
+socket.on('connect', () => socket.emit('hostLogin'));
 $('#start').onclick = () => socket.emit('start');
 $('#skip').onclick = () => socket.emit('skip');
 $('#again').onclick = () => socket.emit('reset');
-socket.on('hostFail', () => ($('#err').textContent = 'Wrong password.'));
 socket.on('hostOk', ({ phase }) => { ok = true; show(phase === 'lobby' ? 'hlobby' : 'game'); });
 socket.on('reset', () => ok && show('hlobby'));
 
