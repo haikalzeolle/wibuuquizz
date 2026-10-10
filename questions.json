@@ -1,102 +1,22 @@
 [
-  {
-    "q": "Yang manakah benar tentang fungsi Majlis Raja-Raja?",
-    "options": [
-      "Menasihati Perdana Menteri berkaitan urusan badan pentadbiran",
-      "Menyelaraskan tatakelola perundangan berkaitan hal ehwal agama",
-      "Menasihati YDPA berkaitan pelantikan Perdana Menteri",
-      "Memelihara hal ehwal berkaitan kedudukan istimewa orang Melayu dan bumiputera"
-    ],
-    "answer": 3
-  },
-  {
-    "q": "Kerajaan Negeri boleh",
-    "options": [
-      "Meluluskan undang-undang kecil Kerajaan Tempatan",
-      "Memilih kakitangan bagi setiap Kerajaan Tempatan",
-      "Menetapkan sempadan Kerajaan Tempatan",
-      "Merancang belanjawan Kerajaan Tempatan"
-    ],
-    "answer": 2
-  },
-  {
-    "q": "Yang manakah kuasa perundangan YDPA?",
-    "options": [
-      "Melantik Perdana Menteri",
-      "Melantik senator",
-      "Melantik Menteri",
-      "Melantik Sultan"
-    ],
-    "answer": 1
-  },
-  {
-    "q": "Yang manakah berkaitan dengan badan kehakiman di Malaysia?",
-    "options": [
-      "Badan kehakiman negara dikawal selia oleh Mahkamah Persekutuan",
-      "Peguam Negara hanya dilantik dalam kalangan peguam kanan kerajaan",
-      "Jabatan Perdana Menteri menggubal reformasi dalam sistem kehakiman negara",
-      "Umur bersara wajib Ketua Hakim Negara Mahkamah Persekutuan ialah 66 tahun"
-    ],
-    "answer": 3
-  },
-  {
-    "q": "Yang manakah benar tentang pembubaran Parlimen?",
-    "options": [
-      "Parlimen terbubar apabila genap tempoh lima tahun",
-      "Mendapat sokongan 2/3 ahli Majlis Parlimen",
-      "Melibatkan semua ahli Majlis Parlimen",
-      "Dibubarkan oleh Perdana Menteri"
-    ],
-    "answer": 0
-  },
-  {
-    "q": "Ciri ketelusan tadbir urus baik merujuk kepada pegawai awam yang",
-    "options": [
-      "mengawasi sumber yang dipertanggungjawabkan dengan amanah",
-      "memberikan maklumat yang jelas kepada pelanggan",
-      "membuat keputusan berdasarkan budi bicaranya",
-      "melakukan kerja dengan ikhlas"
-    ],
-    "answer": 1
-  },
-  {
-    "q": "Yang manakah kesan tadbir urus baik negara kepada rakyat?",
-    "options": [
-      "menikmati perkhidmatan berkualiti",
-      "memenuhi kehendak pelanggan",
-      "menjimatkan kos perbelanjaan",
-      "mengurangkan aduan awam"
-    ],
-    "answer": 1
-  },
-  {
-    "q": "Yang manakah cabaran utama tadbir urus baik?",
-    "options": [
-      "saingan daripada tadbir urus swasta",
-      "memenuhi hasrat dan aspirasi rakyat",
-      "lambakan kerja yang perlu disiapkan",
-      "sistem penyampaian perkhidmatan awam"
-    ],
-    "answer": 3
-  },
-  {
-    "q": "Tadbir urus yang cekap bertujuan untuk",
-    "options": [
-      "melaksanakan penguatkuasaan secara terpilih",
-      "meningkatkan keupayaan kerajaan untuk melaksanakan dasar",
-      "menambahkan sumber manusia dalam perkhidmatan awam",
-      "mengekalkan karenah birokrasi dalam prosedur menjalankan tugas"
-    ],
-    "answer": 1
-  },
-  {
-    "q": "Tindakan penjawat awam yang memuat naik maklumat sulit agensinya melalui laman sosial melanggar prinsip",
-    "options": [
-      "integriti",
-      "ketelusan",
-      "pematuhan",
-      "akauntabiliti"
-    ],
-    "answer": 0
-  }
+  {"q":"Yang manakah benar tentang fungsi Majlis Raja-Raja?","options":["Menasihati Perdana Menteri berkaitan urusan badan pentadbiran","Menyelaraskan tatakelola perundangan berkaitan hal ehwal agama","Menasihati YDPA berkaitan pelantikan Perdana Menteri","Memelihara hal ehwal berkaitan kedudukan istimewa orang Melayu dan bumiputera"],"answer":3},
+  {"q":"Kerajaan Negeri boleh","options":["Meluluskan undang-undang kecil Kerajaan Tempatan","Memilih kakitangan bagi setiap Kerajaan Tempatan","Menetapkan sempadan Kerajaan Tempatan","Merancang belanjawan Kerajaan Tempatan"],"answer":2},
+  {"q":"Yang manakah kuasa perundangan YDPA?","options":["Melantik Perdana Menteri","Melantik senator","Melantik Menteri","Melantik Sultan"],"answer":1},
+  {"q":"Yang manakah berkaitan dengan badan kehakiman di Malaysia?","options":["Badan kehakiman negara dikawal selia oleh Mahkamah Persekutuan","Peguam Negara hanya dilantik dalam kalangan peguam kanan kerajaan","Jabatan Perdana Menteri menggubal reformasi dalam sistem kehakiman negara","Umur bersara wajib Ketua Hakim Negara Mahkamah Persekutuan ialah 66 tahun"],"answer":3},
+  {"q":"Yang manakah benar tentang pembubaran Parlimen?","options":["Parlimen terbubar apabila genap tempoh lima tahun","Mendapat sokongan 2/3 ahli Majlis Parlimen","Melibatkan semua ahli Majlis Parlimen","Dibubarkan oleh Perdana Menteri"],"answer":0},
+  {"q":"Ciri ketelusan tadbir urus baik merujuk kepada pegawai awam yang","options":["mengawasi sumber yang dipertanggungjawabkan dengan amanah","memberikan maklumat yang jelas kepada pelanggan","membuat keputusan berdasarkan budi bicaranya","melakukan kerja dengan ikhlas"],"answer":1},
+  {"q":"Yang manakah kesan tadbir urus baik negara kepada rakyat?","options":["Menikmati perkhidmatan berkualiti","Memenuhi kehendak pelanggan","Menjimatkan kos perbelanjaan","Mengurangkan aduan awam"],"answer":1},
+  {"q":"Yang manakah cabaran utama tadbir urus baik?","options":["Saingan daripada tadbir urus swasta","Memenuhi hasrat dan aspirasi rakyat","Lambakan kerja yang perlu disiapkan","Sistem penyampaian perkhidmatan awam"],"answer":3},
+  {"q":"Tadbir urus yang cekap bertujuan untuk","options":["melaksanakan penguatkuasaan secara terpilih","meningkatkan keupayaan kerajaan untuk melaksanakan dasar","menambahkan sumber manusia dalam perkhidmatan awam","mengekalkan karenah birokrasi dalam prosedur menjalankan tugas"],"answer":1},
+  {"q":"Tindakan penjawat awam yang memuat naik maklumat sulit agensinya melalui laman sosial melanggar prinsip","options":["integriti","ketelusan","pematuhan","akauntabiliti"],"answer":0},
+  {"q":"Yang manakah menunjukkan Malaysia sebuah negara berdaulat?","options":["Hubungan pelbagai hala dengan negara lain","Sempadan negara yang dikawal rapi","Pemimpin negara yang berwibawa","Sistem pemerintahan yang cekap"],"answer":1},
+  {"q":"Yang manakah menunjukkan Malaysia sebuah negara berdaulat?","options":["Imej negara yang baik","Ideologi negara yang jelas","Islam sebagai agama Persekutuan","Identiti budaya bangsa yang terpelihara"],"answer":3},
+  {"q":"Yang manakah pernyataan yang menunjukkan Malaysia sebuah negara yang berdaulat?","options":["Penduduk mempunyai jati diri yang tinggi","Negara diiktiraf oleh komuniti antarabangsa","Kuasa politik berdasarkan tolak ansur pelbagai kaum","Ekonomi negara dikongsi bersama oleh pelbagai kaum"],"answer":1},
+  {"q":"Yang manakah ciri asas sesebuah negara?","options":["Diterajui oleh parti politik tertentu","Ditadbir secara demokrasi berparlimen","Diperintah oleh kerajaan yang berdaulat","Diperkukuh oleh sistem ekonomi yang baik"],"answer":2},
+  {"q":"Yang manakah konsep sebuah negara?","options":["Mempunyai penduduk yang tetap dalam negara","Mengamalkan sistem pemerintahan demokrasi","Menjalinkan hubungan dengan negara luar","Mempunyai raja yang berdaulat"],"answer":0},
+  {"q":"Yang manakah sebab pembentukan Malaysia pada 16 September 1963?","options":["Mengikut cadangan Suruhanjaya Cobbold","Menyelesaikan konfrontasi Malaysia dengan negara jiran","Menyusun semula masyarakat Malaysia","Menyekat perkembangan ideologi komunis"],"answer":3},
+  {"q":"Persekutuan Malaysia dibentuk pada 16 September 1963 bertujuan untuk","options":["menyatukan penduduk berbilang kaum","meningkatkan penyertaan penduduk dalam sektor ekonomi","menyeimbangkan komposisi penduduk","menggalakkan penyertaan penduduk dari aspek keselamatan"],"answer":2},
+  {"q":"Apakah tujuan utama Perjanjian Malaysia 1963 (MA63)?","options":["Menyelesaikan pertikaian sempadan antara negeri","Menggabungkan Sabah, Sarawak dan Singapura dengan Persekutuan Tanah Melayu","Menggabungkan negeri-negeri di Semenanjung Malaysia","Menubuhkan kerajaan persekutuan yang baharu"],"answer":1},
+  {"q":"Yang manakah kuasa yang diberikan kepada negeri Sabah dan Sarawak di bawah Perjanjian Malaysia 1963?","options":["Pengurusan sumber asli","Kawalan kastam","Wakil dalam Dewan Undangan Negeri","Peruntukan pinjaman khas"],"answer":0},
+  {"q":"Dalam Perjanjian Malaysia 1963 (MA63), Sabah dan Sarawak telah diberi kuasa","options":["autonomi imigresen","kawalan keselamatan sendiri","memungut hasil dari cari gali minyak","mengadakan hubungan diplomatik sendiri"],"answer":0}
 ]
